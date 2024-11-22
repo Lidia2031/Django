@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/boni.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Mi Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/ava.png' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Lidia Sanchez</h2>   
+        <p>Nacida en el estado de México, mi formacion academica se ha llevado acabo en la Universidad Tecnologica del valle de Toluca </p>
+        <p>He trabajado en ciudad mujeres, actualmente estoy preparandome para la ingenieria de ciberseguridad</p>
+    </div>
+</div>
+{% endblock %}
